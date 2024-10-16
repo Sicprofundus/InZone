@@ -17,6 +17,7 @@ local inzonedisplaymsg = '\ao[\agInZoneDisplay\ao]\ag::\aw'
     This will act as a little include library for reused functions
 --]]
 
+--#region library this should be in shared library
 Locked = true
 Anon = false
 
@@ -59,6 +60,8 @@ function ImGuiButtonFlagsetFlagForLockedState()
         return bit32.bor(ImGuiWindowFlags.NoTitleBar)
     end
 end
+
+--#endregion library
 
 -- GUI Control variables
 local openGUI = true
